@@ -1,0 +1,27 @@
+{% extends "project/base.html" %}
+{% block body %}
+
+
+<div class="container my-3">
+    <div style="width:800px; height:600px; padding:20px; text-align:center; border: 10px solid #d9ec29">
+        <div style="width:750px; height:550px; padding:20px; text-align:center; border: 5px solid #d9ec29">
+            <span style="font-size:50px; font-weight:bold">Certificate of Completion</span>
+            <br><br>
+            <span style="font-size:25px"><i>This is to certify that</i></span>
+            <br><br>
+            <span style="font-size:30px"><b>{%if user.is_authenticated %}
+                <li class = "nav-item" style = "list-style-type: none">{{user.first_name}}
+                </li>
+                {%endif%}</b></span><br /><br />
+            <span style="font-size:25px"><i>has successfully passed and completed the course</i></span>
+            <span style="font-size:30px">coursename</span> <br /><br />
+            <span style="font-size:25px"><i>dated</i></span>
+            <span style="font-size:30px">date of Completion</span><br><br><br><br>
+            <span style="font-size:45px">Spanish For Soul</span>
+        </div>
+    </div>
+    <div class="my-2">
+        <button onclick="window.print()">Download</button>
+    </div>
+</div>
+{% endblock body %}

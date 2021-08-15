@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Test</title>
+    <script type="text/javascript" src="initial.js"></script>
+    <style>
+        body {
+            background-color: rgb(245, 242, 50);
+            margin-left: 2rem;
+            color: black;
+            font-weight: bolder;
+            font-size: 20px;
+        }
+
+        #button {
+            background-color: black;
+            color: white;
+            padding: 5px;
+            font-size: 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <p>Test your prior knowledge</p>
+    <form name="test" id="test">
+        <div>
+            <p>1. Me ... José.</p>
+            <p><input type="radio" name="ques1" value="llama">llama</p>
+            <p><input type="radio" name="ques1" value="llamo">llamo</p>
+            <p><input type="radio" name="ques1" value="llaman">llaman</p>
+            <p><input type="radio" name="ques1" value="llame">llame</p>
+        </div>
+        <div>
+            <p>2. El cielo es ...</p>
+            <p><input type="radio" name="ques2" value="mucho">mucho</p>
+            <p><input type="radio" name="ques2" value="largo">largo</p>
+            <p><input type="radio" name="ques2" value="dulce">dulce</p>
+            <p><input type="radio" name="ques2" value="azul">azul</p>
+        </div>
+        <div>
+            <p>3. ¿... qué tal?</p>
+            <p><input type="radio" name="ques3" value="Por favor">Por favor</p>
+            <p><input type="radio" name="ques3" value="Cómo">Cómo</p>
+            <p><input type="radio" name="ques3" value="Hola">Hola</p>
+            <p><input type="radio" name="ques3" value="Por">Por</p>
+        </div>
+        <div>
+            <p>4. Me ... bailar.</p>
+            <p><input type="radio" name="ques4" value="quiero">quiero</p>
+            <p><input type="radio" name="ques4" value="quieren">quieren</p>
+            <p><input type="radio" name="ques4" value="gusta">gusta</p>
+            <p><input type="radio" name="ques4" value="gustan">gustan</p>
+        </div>
+        <div>
+            <p>5. ¿Habla ... español?</p>
+            <p><input type="radio" name="ques5" value="tú">tú</p>
+            <p><input type="radio" name="ques5" value="usted">usted</p>
+            <p><input type="radio" name="ques5" value="que">que</p>
+            <p><input type="radio" name="ques5" value="por">por</p>
+        </div>
+        <div>
+            <p>6. ... acuesto tarde</p>
+            <p><input type="radio" name="ques6" value="Me">Me</p>
+            <p><input type="radio" name="ques6" value="Mi">Mi</p>
+            <p><input type="radio" name="ques6" value="Yo">Yo</p>
+            <p><input type="radio" name="ques6" value="A mi">A mi</p>
+        </div>
+        <div>
+            <p>7. Dos y nueve son ...</p>
+            <p><input type="radio" name="ques7" value="doce">doce</p>
+            <p><input type="radio" name="ques7" value="quince">quince</p>
+            <p><input type="radio" name="ques7" value="trece">trece</p>
+            <p><input type="radio" name="ques7" value="once">once</p>
+        </div>
+        <div>
+            <p>8. Le duele ...</p>
+            <p><input type="radio" name="ques8" value="la cabeza">la cabeza</p>
+            <p><input type="radio" name="ques8" value="el pelo">el pelo</p>
+            <p><input type="radio" name="ques8" value="la cerveza">la cerveza</p>
+            <p><input type="radio" name="ques8" value="el nieto">el nieto</p>
+        </div>
+        <div>
+            <p>9. Duermes ... el día.</p>
+            <p><input type="radio" name="ques9" value="tanto">tanto</p>
+            <p><input type="radio" name="ques9" value="todo">todo</p>
+            <p><input type="radio" name="ques9" value="casi">casi</p>
+            <p><input type="radio" name="ques9" value="bastante">bastante</p>
+        </div>
+        <div>
+            <p>10. ¿Qué hay de ...?</p>
+            <p><input type="radio" name="ques10" value="parecer">parecer</p>
+            <p><input type="radio" name="ques10" value="nuevo">nuevo</p>
+            <p><input type="radio" name="ques10" value="aún">aún</p>
+            <p><input type="radio" name="ques10" value="siempre">siempre</p>
+        </div>
+
+        <input type="button" name="" value="Submit" id="button" onclick="check()">
+
+    </form>
+    <p id="result"></p>
+
+</body>
+
+</html>

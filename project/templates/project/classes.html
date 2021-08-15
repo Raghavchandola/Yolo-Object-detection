@@ -1,0 +1,62 @@
+{%extends 'project/base.html'%}
+{%block title%}Spanish For Soul{%endblock%}
+{%block body%}
+<div class="album py-5 bg-light">
+    <div class="container">
+
+
+
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            {% for objects in show %}
+            <div class="col">
+
+                <div class="card shadow-sm">
+
+                    <img src="{{objects.class_images.url}}" width="100%" height="225" alt="">
+                    <div class="card-body">
+                        <h3><a href="{% url 'opened_notes' objects.id %}"> {{objects.class_name}} </a></h3>
+                        <p class="card-text">{{objects.class_description}}<br>
+                            {{objects.id}}</p>
+
+                        #
+                    </div>
+                </div>
+
+            </div>
+            {% endfor %}
+        </div>
+
+    </div>
+</div>
+{%endblock%}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

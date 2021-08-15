@@ -1,0 +1,140 @@
+{%extends 'project/basic.html'%} {%block title%}Spanish For Soul{%endblock%}
+{%block body%}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Learning Spanish</title>
+    <!-- <link rel="stylesheet" href="design_levels.css"> -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body
+    style="
+      background-image: url(back.jpeg);
+      background-repeat: repeat;
+      background-color: white;
+    "
+  >
+    {%load static%}
+    <div class="container" style="background-color: white">
+      <h1>Levels</h1>
+      <hr
+        style="
+          height: 2px;
+          border-width: 0;
+          color: gray;
+          background-color: gray;
+        "
+      />
+    </div>
+    <div class="container">
+      <img
+        src="/static/project/info.jpg"
+        class="img-fluid"
+        alt="Responsive image"
+      />
+    </div>
+    <div class="container">
+      <script>
+        def graph();
+      </script>
+    </div>
+    <div class="container" style="background-color: white">
+      <h2>A1</h2>
+      <p>
+        Students at this level can understand and use familiar everyday
+        expressions and very basic phrases aimed at satisfying concrete needs
+        such as introducing themselves and others. They can interact in a simple
+        way provided the other person talks slowly and clearly and is prepared
+        to help.
+      </p>
+      <p>The time duration for this course is 4 weeks.</p>
+      <!--buttons for individual courses-->
+      <button type="button" class="btn btn-outline-dark">
+        <a href="paying">Take Course</a>
+      </button>
+      <h2>A2</h2>
+      <p>
+        Students at this level can understand sentences and frequently used
+        expressions related to areas of most immediate relevence such as basic
+        personal and family information, shopping and work. They can exchange
+        information on familiar and routine matters and describe in simple terms
+        aspects of their background and immediate environment
+      </p>
+      <p>The time duration for this course is 5 weeks.</p>
+      <button type="button" class="btn btn-outline-dark">
+        <a href="paying">Take Course</a>
+      </button>
+      <h2>B1</h2>
+      <p>
+        Students can understand the main points of clear standard input on
+        familiar matters such as work, school, leisure etc. They can deal with
+        more situations whilst travelling in Spanish speaking areas. They can
+        describe experiences and events, dreams, hopes and ambitions and give
+        brief explanations for opinions and plans.
+      </p>
+      <p>The time duration for this course is 7 weeks.</p>
+      <button type="button" class="btn btn-outline-dark">
+        <a href="paying">Take Course</a>
+      </button>
+      <h2>B2</h2>
+      <p>
+        Students should be able to understand the main ideas of complex texts on
+        both concrete and abstract topics, including technical discussions in
+        the field of specialisation. They can interact with the degree of
+        fluency that makes regular interaction possible.
+      </p>
+      <p>The time duration for this course is 8 weeks.</p>
+      <button type="button" class="btn btn-outline-dark">
+        <a href="paying">Take Course</a>
+      </button>
+      <h2>C1</h2>
+      <p>
+        Students should be able to understand and recognise a wide range of
+        implicit meanings. They can express themselves fluently and
+        spontaneously without much obvious seraching for expressions. They can
+        use language flexibly and effectively for social, acedemic and
+        proffesional purposes.
+      </p>
+      <p>The time duration for this course is 11 weeks</p>
+      <button type="button" class="btn btn-outline-dark">
+        <a href="paying">Take Course</a>
+      </button>
+      <h2>C2</h2>
+      <p>
+        Students can understand with ease virtually everything heard or read.
+        They can summarise information from different spoken and written
+        sources, reconstructing arguments and accounts in a coherent
+        presentation. They are able to express themselves spontaneosly, very
+        fluently anf precisely, differentiating final shades of meaning even in
+        more complex situations.
+      </p>
+      <p>The time duration for this course is 13 weeks.</p>
+      <button type="button" class="btn btn-outline-dark">
+        <a href="paying">Take Course</a>
+      </button>
+    </div>
+
+    <script
+      src=" https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+{%endblock%}

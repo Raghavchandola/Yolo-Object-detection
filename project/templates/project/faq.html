@@ -1,0 +1,19 @@
+{% extends "project/base.html" %}
+{% block body %}
+
+
+{% for object in show  %}
+
+
+<div class="feature col my-3 mx-2">
+        <div class="feature-icon  bg-gradient">
+          
+        <strong><i>Question:</i></strong><p><b>{{object.question}}</b></p>
+       <strong><i>Answer:</i></strong> <p>{{object.answer}}</p>
+        
+        
+          
+      </div>
+
+{% endfor %}
+{% endblock body %}

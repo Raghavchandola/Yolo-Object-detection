@@ -1,0 +1,14 @@
+{% extends "project/basic.html" %}
+{% block body %}
+<div class="container my-3">
+
+<form action="test1" method="POST">
+    {%csrf_token%}
+    <label for="nubmer">
+        Enter test nubmer  
+
+    </label>
+    <input type="text" name="number">
+    <button type="submit">submit</button>
+</form></div>
+{% endblock body %}

@@ -1,0 +1,5 @@
+html page
+{% for b in product %}
+{{b.name}}
+<a href="{% url 'displaying' b.id %}">click</a>
+{% endfor %}

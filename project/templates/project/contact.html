@@ -1,0 +1,48 @@
+{%extends 'project/basic.html'%}
+{%block title%}Spanish For Soul{%endblock%}
+{%block body%}
+
+{%for message in messages%}
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+  <strong>Message:</strong> {{message}}
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+
+{%endfor%}
+{%load static%}
+<div class="container">
+  <form action="contact" method="POST">
+    {%csrf_token%}
+    <div class="col-md-7 col-lg-8">
+      <h4 class="mb-3">Contact Us</h4>
+      <form class="needs-validation" novalidate="">
+        <div class="row g-3">
+          <div class="col-sm-6">
+            <label for="firstName" class="form-label">First name</label>
+            <input type="text" name="fname1" class="form-control" id="firstName" placeholder="" value="" required="">
+
+          </div>
+
+          <div class="col-sm-6">
+            <label for="lastName" class="form-label">Last name</label>
+            <input type="text" name="lname1" class="form-control" id="lastName" placeholder="" value="" required="">
+
+          </div>
+
+
+        </div>
+
+        <div class="col-12">
+          <label for="email" class="form-label">Email </label>
+          <input type="email" name="mail12" class="form-control" id="email" placeholder="you@example.com">
+
+        </div>
+        <div class="form-floating">
+          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+            style="height: 100px; margin: 2px;" name="query"></textarea>
+          <label for="floatingTextarea2">Query</label>
+        </div>
+        <button type="submit" class="btn btn-primary my-2">Submit</button>
+      </form>
+    </div>
+    {%endblock%}
